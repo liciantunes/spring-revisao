@@ -20,13 +20,13 @@ import vendas.servicies.ClienteService;
 @RequestMapping("/cliente")
 public class ClienteController {
 
-private final ClienteService clienteService;
-	
+	private final ClienteService clienteService;
+
 	@Autowired
 	public ClienteController(ClienteService clienteService) {
 		this.clienteService = clienteService;
 	}
-	
+
 	@GetMapping("/{id}")
 	public ResponseEntity<Cliente> findClientebyId(@PathVariable Long idcliente) {
 		Cliente cliente = clienteService.getClienteByIdcliente(idcliente);
@@ -48,8 +48,6 @@ private final ClienteService clienteService;
 		Cliente novocliente = clienteService.saveCliente(cliente);
 		return ResponseEntity.status(HttpStatus.CREATED).body(novocliente);
 	}
-
-	
 
 	@DeleteMapping("/id")
 	public ResponseEntity<String> deleteUsuarioControl(@PathVariable Long idcliente) {

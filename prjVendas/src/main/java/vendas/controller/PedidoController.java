@@ -18,7 +18,7 @@ import vendas.entities.Pedido;
 import vendas.servicies.PedidoService;
 
 @RestController
-@RequestMapping("/pedidos")
+@RequestMapping("/pedido")
 public class PedidoController {
 
 private final PedidoService pedidoService;

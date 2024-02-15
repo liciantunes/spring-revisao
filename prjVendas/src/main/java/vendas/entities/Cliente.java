@@ -22,31 +22,40 @@ public class Cliente {
 	
 	@Column(name = "telefone")
 	private String telefone;
-	
-	public Long getIdcliente() {
-		return idcliente;
+
+	public String getName() {
+		return name;
 	}
-	
-	public void setIdcliente(Long idcliente) {
-		this.idcliente = idcliente;
+
+	public void setName(String name) {
+		this.name = name;
 	}
-	
+
 	public String getEmail() {
 		return email;
 	}
-	
+
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
+
 	public String getTelefone() {
 		return telefone;
 	}
-	
+
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
 
+	public Long getIdcliente() {
+		return idcliente;
+	}
+
+	public void setIdcliente(Long idcliente) {
+		this.idcliente = idcliente;
+	}
+	
+	
 	
 	
 }
